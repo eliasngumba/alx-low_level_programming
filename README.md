@@ -1,1 +1,1 @@
-My first commit in C programming
+operators and how to use them
