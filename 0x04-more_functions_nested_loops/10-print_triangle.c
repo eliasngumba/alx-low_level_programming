@@ -5,20 +5,30 @@
  */
 void print_triangle(int size)
 {
-	int inc1, inc2;
+	int i;
+	int z;
+	int d;
+	int p;
 
 	if (size > 0)
 	{
-		for (inc1 = 1; inc1 <= size; inc1++)
+		d = size - 1;
+		for (i = 0; i < size ; i++)
 		{
-			for ((inc2 = size - inc1); inc2 > 0; inc2--)
-				_putchar(' ');
-			for (inc2 = 0; inc2 < inc1; inc2++)
-				_putchar('#');
-			if (inc1 == size)
-				continue;
-			_putchar('\n');
+			for (z = d; z > 0 ; z--)
+			{
+				_putchar (' ');
+			}
+			for (p = 0; p <= i; p++)
+			{
+				_putchar (35);
+			}
+			d--;
+			_putchar ('\n');
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar ('\n');
+	}
 }
